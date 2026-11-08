@@ -1,0 +1,411 @@
+.footer {
+    width: 100%;
+    background: #ffffff;
+    border-top: 1px solid #e1e3e5;
+    font-family: "DM Sans", sans-serif;
+}
+
+/* Main */
+
+.footer-main {
+    max-width: 1100px;
+    width: calc(100% - 40px);
+    margin: 0 auto;
+
+    padding: 55px 0 45px;
+
+    display: grid;
+    grid-template-columns: 1.5fr 0.65fr 0.85fr 1.5fr;
+    gap: 45px;
+}
+
+/* About */
+
+.footer-about {
+    max-width: 280px;
+}
+
+.footer-logo img {
+    width: 150px;
+    height: auto;
+    margin-bottom: 18px;
+}
+
+.footer-about>p {
+    color: #85869a;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 22px;
+}
+
+/* Socials */
+
+.footer-socials {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer-socials a {
+    width: 24px;
+    height: 24px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #636270;
+    font-size: 13px;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.footer-socials a:first-child {
+    width: 38px;
+    height: 38px;
+    border: 1px solid #007580;
+    color: #007580;
+}
+
+.footer-socials a:hover {
+    background: #007580;
+    color: white;
+}
+
+/* Columns */
+
+.footer-column h3,
+.footer-newsletter h3 {
+    color: #9a9caa;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.footer-column a {
+    color: #272343;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.footer-column a:hover {
+    color: #007580;
+}
+
+.footer-column .footer-active {
+    color: #007580;
+    text-decoration: underline;
+}
+
+/* Newsletter */
+
+.footer-newsletter {
+    min-width: 0;
+}
+
+.newsletter-form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.newsletter-form input {
+    width: 100%;
+    min-width: 0;
+    height: 45px;
+
+    padding: 0 15px;
+
+    border: 1px solid #e1e3e5;
+    border-radius: 7px;
+    outline: none;
+
+    font-family: inherit;
+    font-size: 14px;
+}
+
+.newsletter-form input:focus {
+    border-color: #007580;
+}
+
+.newsletter-form input::placeholder {
+    color: #9a9caa;
+}
+
+.newsletter-form button {
+    height: 45px;
+    padding: 0 22px;
+
+    border: none;
+    border-radius: 7px;
+
+    background: #029fae;
+    color: white;
+
+    font-size: 13px;
+    font-weight: 600;
+    white-space: nowrap;
+
+    transition: 0.3s;
+}
+
+.newsletter-form button:hover {
+    background: #007580;
+}
+
+.footer-newsletter>p {
+    color: #85869a;
+    font-size: 13px;
+    line-height: 1.6;
+    margin-top: 18px;
+}
+
+/* =========================
+   BOTTOM FOOTER
+========================= */
+
+.footer-bottom {
+    border-top: 1px solid #e1e3e5;
+}
+
+.footer-bottom-inner {
+    max-width: 1100px;
+    width: calc(100% - 40px);
+    min-height: 65px;
+
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.footer-bottom-inner>p {
+    color: #9a9caa;
+    font-size: 13px;
+}
+
+.footer-bottom-inner strong {
+    color: #272343;
+    font-weight: 500;
+}
+
+/* Payment icons */
+
+.footer-payments {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.footer-payments i {
+    font-size: 27px;
+    color: #c5c5c5;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+    .footer-main {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+
+    .footer-about {
+        max-width: 100%;
+    }
+
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 550px) {
+
+    .footer-main {
+        grid-template-columns: 1fr 1fr;
+        gap: 35px 20px;
+        padding: 40px 0;
+    }
+
+    .footer-about {
+        grid-column: 1 / -1;
+    }
+
+    .footer-newsletter {
+        grid-column: 1 / -1;
+    }
+
+    .footer-column h3,
+    .footer-newsletter h3 {
+        font-size: 11px;
+    }
+
+    .footer-column a {
+        font-size: 12px;
+    }
+
+    .footer-about>p {
+        font-size: 13px;
+    }
+
+    .newsletter-form {
+        gap: 7px;
+    }
+
+    .newsletter-form button {
+        padding: 0 13px;
+        font-size: 12px;
+    }
+
+    .footer-bottom-inner {
+        flex-direction: column;
+        justify-content: center;
+        padding: 18px 0;
+        text-align: center;
+    }
+
+    .footer-bottom-inner>p {
+        font-size: 11px;
+    }
+
+    .footer-payments {
+        gap: 10px;
+    }
+
+    .footer-payments i {
+        font-size: 23px;
+    }
+}
+
+.footer-main {
+  margin-top: 10px;
+}
+/* LOGIN */
+
+.login {
+  width: 100%;
+  min-height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  background: #fff;
+}
+
+.login-box {
+  width: 377px;
+  padding: 17px 19px 13px;
+  background: #fff;
+  border-radius: 9px;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.10);
+}
+
+.login-box h2 {
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  color: #292943;
+  margin-bottom: 13px;
+}
+
+.login-box form > input,
+.password-box input {
+  width: 100%;
+  height: 29px;
+  box-sizing: border-box;
+  background: #f3f4f6;
+  border: none;
+  border-radius: 5px;
+  padding: 0 12px;
+  font-size: 10px;
+  outline: none;
+  margin-bottom: 9px;
+}
+
+.login-box input::placeholder {
+  color: #a0a3b0;
+}
+
+.password-box {
+  position: relative;
+}
+
+.password-box input {
+  padding-right: 35px;
+}
+
+.password-box i {
+  position: absolute;
+  right: 12px;
+  top: 9px;
+  font-size: 13px;
+  color: #292943;
+  cursor: pointer;
+}
+
+.login-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 9px;
+  margin: 0 0 14px;
+  color: #555568;
+}
+
+.login-options label {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.login-options input {
+  width: 12px;
+  height: 12px;
+  margin: 0;
+}
+
+.login-options a,
+.login-box p a {
+  color: #009aaa;
+  text-decoration: none;
+}
+
+.login-box button {
+  width: 100%;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  background: #05a2ae;
+  color: white;
+  font-size: 10px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.login-box button span {
+  font-size: 16px;
+  margin-left: 7px;
+}
+
+.login-box p {
+  text-align: center;
+  font-size: 9px;
+  color: #292943;
+  margin-top: 14px;
+  margin-bottom: 0;
+}
